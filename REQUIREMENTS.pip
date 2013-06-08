@@ -7,3 +7,5 @@ coverage==3.5
 django-hstore==1.1.1
 django-celery==3.0.1
 django_nose==1.1
+datetime==4.0
+fabric==1.6.1

@@ -4,7 +4,6 @@ from __init__ import *
 
 DEBUG = True
 TEMPLATE_DEBUG = True
-TASTYPIE_FULL_DEBUG = True
 
 ADMIN_MEDIA_PREFIX = '/media/admin-media/'
 MEDIA_ROOT = tempfile.mkdtemp()
