@@ -10,5 +10,3 @@ django_nose==1.1
 datetime==4.0
 fabric==1.6.1
 pep8==1.4.5
-
-# test
