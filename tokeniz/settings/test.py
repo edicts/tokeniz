@@ -25,7 +25,13 @@ INSTALLED_APPS += ('django_nose',)
 TEST_RUNNER = 'tokeniz.tests.TokenizTestSuiteRunner'
 COVERAGE_MODULES = [
     # common
-    'common.mixins', 'common.models',
+    'common.mixins', 'common.models', 'common.forms', 'common.managers',
+
+    # relationships
+    'relationships.models',
+
+    # api
+    'api.
 ]
 
 # The following apps won't be tested by the testrunner.

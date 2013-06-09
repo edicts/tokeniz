@@ -1,7 +1,5 @@
 from django.test import TestCase
 
-from common import models
-
 
 class LocationTest(TestCase):
     def setUp(self):
@@ -10,5 +8,3 @@ class LocationTest(TestCase):
     def tearDown(self):
         pass
 
-    def test_my_example(self):
-        self.assertTrue(models.my_example())
