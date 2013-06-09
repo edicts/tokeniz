@@ -3,7 +3,8 @@ import json
 
 from django import http
 
-from api import constants as api_constants
+from api.v1 import constants as api_constants
+
 
 def json_response(request, success=True, **extra):
     mimetype = api_constants.JSON_MIMETYPE

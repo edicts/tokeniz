@@ -76,7 +76,7 @@ class ClientWebsite(TimestampMixin, common_models.BaseModel):
     client = models.ForeignKey(Client, related_name='website_set')
     title = models.CharField(max_length=255, blank=False, null=False)
     url = models.URLField(
-        verify_exists=False, blank=False, null=False,
+        blank=False, null=False,
         validators=[validators.URLValidator])
 
     @property

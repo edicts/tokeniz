@@ -26,12 +26,13 @@ TEST_RUNNER = 'tokeniz.tests.TokenizTestSuiteRunner'
 COVERAGE_MODULES = [
     # common
     'common.mixins', 'common.models', 'common.forms', 'common.managers',
+    'common.utils',
 
     # relationships
     'relationships.models',
 
     # api
-    'api.
+    'api.v1.content', 'api.v1.forms', 'api.v1.migrate', 'api.v1.models',
 ]
 
 # The following apps won't be tested by the testrunner.
