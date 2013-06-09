@@ -95,4 +95,3 @@ def restart_celery():
     Runs 'sudo service celery restart'.
     """
     sudo('service celery restart')
-

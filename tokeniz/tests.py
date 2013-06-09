@@ -26,7 +26,7 @@ class TokenizTestSuiteRunner(NoseTestSuiteRunner):
             pkg = case.__class__.__module__.split('.')[0]
             if pkg not in EXCLUDED_APPS:
                 tests.append(case)
-        suite._tests=tests
+        suite._tests = tests
 
         return suite
 

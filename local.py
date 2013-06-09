@@ -24,7 +24,8 @@ def manage(cmd):
 @task
 def test(app=None):
     """
-    Shortcut to run manage.py test [<app>]. Appends --settings=tokeniz.settings.test
+    Shortcut to run manage.py test [<app>].
+        Appends --settings=tokeniz.settings.test
     """
     with lcd(os.path.join(os.path.dirname(__file__), 'tokeniz')):
         if app:

@@ -26,6 +26,13 @@ command.::
 
     $ django-admin.py test common --settings=tokeniz.settings.test
 
+Once tests have passed and you've verified proper coverage you should run a
+PEP8 check with the following command and fix any suggestions given by
+the output.::
+
+    $pep8 --first --show-source --show-pep8 --count --ignore=W391 --exclude=urls.py,README.md,REQUIREMENTS.pip *
+
+
 Notes
 -----
 We require that tests be ran before pushing code live. If you push code that
@@ -35,3 +42,8 @@ changes until they can fully test their changes.
 We do have a couple exceptions for testing. Templates and Views in Django are
 not necessary to test. Both of these areas have often changing interfaces that
 really hamper development.
+
+There are exceptions for PEP8 standards.  Just because the output suggests a
+change doesn't necessarily mean you should make the change.  Use your best
+judgement.  If you don't know what to do you should err on the side of
+caution or ask another developer for their opinion.
