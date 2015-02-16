@@ -1,5 +1,5 @@
 django==1.5.1
-PIL==1.1.7
+pillow==2.7.0
 psycopg2==2.5
 south==0.8.1
 celery==3.0.1
